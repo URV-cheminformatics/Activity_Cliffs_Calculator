@@ -7,4 +7,6 @@ The program needs pandas, numpy, tqdm, rdkit, combinations and plotly.express li
 
 Example on an input file https://www.mdpi.com/article/10.3390/ijms23010259/s1 from Macip G, Garcia-Segura P, Mestres-Truyol J, Saldivar-Espinoza B, Pujadas G, Garcia-Vallvé S. A Review of the Current Landscape of SARS-CoV-2 Main Protease Inhibitors: Have We Hit the Bullseye Yet? Int J Mol Sci. 2021 Dec 27;23(1):259. doi: 10.3390/ijms23010259# Activity_Cliffs_Calculator
 
+A csv file with all the pairs of compounds with the same PubMedID and an interative plot are generated:
+
 ![newplot](https://github.com/user-attachments/assets/613bf395-c978-4fe0-a651-1ff75312ec26)

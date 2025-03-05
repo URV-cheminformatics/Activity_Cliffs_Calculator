@@ -1,7 +1,7 @@
 Calculate activity cliffs between chemical compounds.
 
 Compute activity Cliffs (pairs or groups of structurally similar compounds that are active against the same target but have large differences in potency) from an xls file containing a set of molecules. The columns "standardize_smiles", "PubMedID" and "pIC50" are mandatory. 
-The program uses rdkit to compute Morgan fingerprints of each molecule. When the PubMedID is the same, for each pair of molecules a disparity value is calculated as disparity = pIC50_diff / (1 - tanimoto).
+The program uses rdkit to compute Morgan fingerprints of each molecule. For each pair of molecules from the same article (i.e., with the same PubMedID), a disparity value is calculated as disparity = pIC50_diff / (1 - tanimoto).
 
 The program needs pandas, numpy, tqdm, rdkit, combinations and plotly.express libraries
 

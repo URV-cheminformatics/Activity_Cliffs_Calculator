@@ -1,0 +1,27 @@
+name: Activity_Cliffs_Calculator
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # --- Core Python environment ---
+  - python=3.10
+  - numpy>=2.0
+  - pandas>=2.2
+
+  # --- Cheminformatics ---
+  - rdkit>=2025.09.1
+
+  # --- Data visualization ---
+  - plotly>=5.0
+  - nbformat>=4.2     # Required for Plotly to display figures inside notebooks
+
+  # --- Excel file I/O ---
+  - xlrd>=2.0.1       # For reading legacy .xls files
+  - openpyxl          # For modern .xlsx Excel files
+
+  # --- Utility ---
+  - tqdm>=4.0         # Optional, for progress bars during pair generation
+
+  # --- Optional: Jupyter / VS Code integration ---
+  - jupyterlab        # For interactive notebooks
+

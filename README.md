@@ -9,4 +9,5 @@ Example on an input file https://www.mdpi.com/article/10.3390/ijms23010259/s1 fr
 
 A csv file with all the pairs of compounds with the same PubMedID and an interative plot are generated:
 
-![newplot](https://github.com/user-attachments/assets/613bf395-c978-4fe0-a651-1ff75312ec26)
+![newplot]<img width="1721" height="699" alt="imatge" src="https://github.com/user-attachments/assets/854e2a2d-c722-484b-9961-a6877699a05a" />
+

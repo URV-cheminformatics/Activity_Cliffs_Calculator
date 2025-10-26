@@ -73,18 +73,20 @@ Each filter is **optional** — if set to `None`, it is ignored.
 ## 🧰 Example Workflow
 
 ```python
-from activity_cliffs import (
+from activity_cliffs_utils import (
     fp_as_bitvect, generate_pairs,
-    export_activity_cliffs_to_excel, show_molecule_table
+    export_activity_cliffs_to_excel, show_molecule_table, mol_to_image_bytes, smiles_to_svg
 )
 from rdkit import Chem
 import pandas as pd
+import plotly.express as px
+
 
 # 1️⃣ Load input data
 df = pd.read_excel("M-pro_Inhibitors.xls")
 
 # 2️⃣ Compute fingerprints (feature_morgan by default)
-df["fingerprints"] = df["standardize_smiles"].apply(
+df["fp_feature_morgan"] = df["standardize_smiles"].apply(
     lambda s: fp_as_bitvect(Chem.MolFromSmiles(s)) if Chem.MolFromSmiles(s) else None
 )
 
@@ -97,7 +99,7 @@ fig = px.scatter(
     x='Tanimoto',
     y='pIC50_diff',
     title='Activity difference vs Tanimoto Similarity',
-    labels={'Tanimoto': f'Tanimoto Similarity ({fp_col})', 'pIC50_diff': 'Activity difference (ΔpIC50)'},
+    labels={'Tanimoto': f'Tanimoto Similarity (feature_morgan)', 'pIC50_diff': 'Activity difference (ΔpIC50)'},
     hover_data=['Compound1', 'Compound2', 'Disparity']
 )
 # Adjust the chart dimensions

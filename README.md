@@ -126,7 +126,7 @@ filtered_df["Mol1_svg"] = filtered_df["SMILES1"].apply(lambda s: smiles_to_svg(s
 filtered_df["Mol2_svg"] = filtered_df["SMILES2"].apply(lambda s: smiles_to_svg(s, size=(120,120)))
 
 # 7️⃣  Export to Excel
-export_activity_cliffs_to_excel(filtered_df, "disparity_results_fp_morgan.xlsx", image_size=150)
+export_activity_cliffs_to_excel(filtered_df, "disparity_results_feature_morgan.xlsx", image_size=150)
 
 # 8️⃣ Display molecule preview
 show_molecule_table(filtered_df, max_rows=30, img_size=(120,120))

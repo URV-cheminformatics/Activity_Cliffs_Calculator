@@ -1,4 +1,4 @@
-# 🧮 Activity Cliff Calculator
+# 🔬 Activity Cliff Calculator
 
 ## A Python tool to identify and analyze **activity cliffs** — pairs of structurally similar compounds with large potency differences.
 

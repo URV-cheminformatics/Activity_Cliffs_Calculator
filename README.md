@@ -72,6 +72,8 @@ Each filter is **optional** — if set to `None`, it is ignored.
 
 ## 🧰 Example Workflow
 
+It uses as input file a .xls file containing a dataset of SARS-CoV-2 M-Pro inhibitors from Macip G, Garcia-Segura P, Mestres-Truyol J, Saldivar-Espinoza B, Pujadas G, Garcia-Vallvé S. <a href="https://www.mdpi.com/1422-0067/23/1/259" target="_blank">A Review of the Current Landscape of SARS-CoV-2 Main Protease Inhibitors: Have We Hit the Bullseye Yet?</a> Int J Mol Sci. 2021 Dec 27;23(1):259. doi: 10.3390/ijms23010259 available at <a href="https://www.mdpi.com/article/10.3390/ijms23010259/s1" target="_blank">https://www.mdpi.com/article/10.3390/ijms23010259/s1</a>
+
 ```python
 from activity_cliffs_utils import (
     fp_as_bitvect, generate_pairs,
